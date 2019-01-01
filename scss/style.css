@@ -58,4 +58,56 @@ body {
     margin: auto;
   }
 }
+
+#profile > * {
+  display: inline-block;
+}
+
+#profile aside {
+  background-color: #f8f9fa !important;
+  padding: 20px 15px;
+  display: fixed;
+}
+
+#profile aside .pp {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#profile aside .pp img {
+  max-width: 150px;
+  display: block;
+}
+
+#profile aside .name {
+  text-align: center;
+  font-weight: bold;
+  margin: 15px 0;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+}
+
+#profile aside .other-info {
+  width: 100%;
+  text-align: center;
+}
+
+#profile aside .other-info p {
+  margin: auto;
+}
+
+#profile .the-table {
+  margin: 20px auto;
+}
+
+#profile .the-table table td, #profile .the-table table th {
+  border: 1px solid;
+  text-align: center;
+  padding: 6px 12px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
 /*# sourceMappingURL=style.css.map */

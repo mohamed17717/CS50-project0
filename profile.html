@@ -8,10 +8,10 @@
     <title>Project0</title>
 
     <!-- strat style -->
-        <!-- start bootstrap -->
+    <!-- start bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <!-- end bootstrap -->
+    <!-- end bootstrap -->
     <link rel="stylesheet" href="./scss/style.css">
     <!-- end style -->
 </head>
@@ -47,48 +47,64 @@
         </nav>
         <!-- end nav -->
 
-        <!-- start image section -->
-        <section class="row" id="image">
-            <div class="col-lg-6 col-md-12 img-md-center img-continer">
-                <img class="img-responsive-small" src="#">
-            </div>
-            <div class="col-lg-6 col-md-12 details">
-                <h3>Details</h3>
-                <ul>
-                    <li>name: Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-                    <li>data: naLorem ipsum dolor sit amet consda</li>
-                    <li>then: Lorem ipsum dolor sit amet coa!</li>
-                    <li>else: nada</li>
-                </ul>
+        <!-- start content section -->
+        <section id="profile">
+            <aside>
+                <div class="main-data row">
+                    <div class="col-12">
+                        <div class="pp">
+                            <img src="images/13.jpg" alt="profile picture" title="nada khodery">
+                        </div>
+                    </div>
+                    <div class="col-12 name">Nada Khodery</div>
+                </div>
+                <div class="other-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum ratione temporibus, qui sint, atque similique culpa, animi exercitationem ab mollitia sapiente earum natus rem facere voluptate suscipit facilis reprehenderit.</p>
+                </div>
+            </aside>
+            <div class="the-table">
+                <h3>Pics Uploaded</h3>
+                <table>
+                    <tr>
+                        <th>name</th>
+                        <th>date</th>
+                        <th>size</th>
+                        <th>description</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Blue sky</a></td>
+                        <td>2-11-2018</td>
+                        <td>4.18MB</td>
+                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et rerum ducimus harum, unde saepe corrupti rati !!</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Red Eyes</a></td>
+                        <td>6-11-2018</td>
+                        <td>2.13MB</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">heart</a></td>
+                        <td>9-12-2018</td>
+                        <td>1.3MB</td>
+                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto doloribus totam ex fugit asperiores facere nisi distinctio, natus harum id rem aperiam! Odit autem quod animi perferendis quasi cum cumque.</td>
+                    </tr>
+                </table>
             </div>
         </section>
-        <!-- end image section -->
+        <!-- end content section -->
     </main>
 
     <!-- start scripts -->
-        <!-- start bootstrap -->
+    <!-- start bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <!-- end bootstrap -->
-    <script>
-        // start get all params in url
-        var urlparams = location.href.split('?')[1].split('&');
-        var params = {};
-        for (p of urlparams){
-            p = p.split('=');
-            params[p[0]] = p[1];
-        }
-        // end get all params in url
-
-        window.onload = function(){
-            img = document.querySelector('#image img');
-            img.src = params['url']
-        }
-    </script>
+    <!-- end bootstrap -->
+    <script src="./js/script.js"></script>
     <!-- end scripts -->
 
 </body>

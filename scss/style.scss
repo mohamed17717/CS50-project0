@@ -76,3 +76,59 @@ $lg: 992px;
     }
 }
 // end image section
+
+// start profile
+#profile{
+    > *{
+        display: inline-block;
+    }
+    aside{
+        background-color: #f8f9fa !important;
+        padding: 20px 15px;
+        // height: 1000px;
+        display: fixed;
+        $img_width: 150px;
+        .pp{
+            overflow: hidden;
+            width: $img_width;
+            height: $img_width;
+            border-radius: 50%;
+            margin: auto;
+            img{
+                max-width: 150px; 
+                display: block;
+            }
+        }
+
+        .name{
+            text-align: center;
+            font-weight: bold;
+            margin: 15px 0;
+            letter-spacing: 3px;
+            word-spacing: 3px;
+
+        }
+        .other-info{
+            width: 100%;
+            text-align: center;
+            // min-width: 300px;
+            p{
+                margin: auto;
+                // width: 300px;
+            }
+        }
+    }
+    .the-table{
+        margin: 20px auto;
+        table{
+            td, th{
+                border: 1px solid ;
+                text-align: center;
+                padding: 6px 12px;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+// end profile
